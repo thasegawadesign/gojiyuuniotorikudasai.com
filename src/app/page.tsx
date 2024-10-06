@@ -60,65 +60,63 @@ export default function Home() {
           )}
         >
           {items.map((item) => (
-            <>
-              <section>
-                <div
-                  className={clsx(
-                    "flex flex-row-reverse items-center justify-center gap-5 -sm:flex-col -sm:gap-4"
-                  )}
-                >
-                  <div>
-                    <h2
+            <section key={item.name}>
+              <div
+                className={clsx(
+                  "flex flex-row-reverse items-center justify-center gap-5 -sm:flex-col -sm:gap-4"
+                )}
+              >
+                <div>
+                  <h2
+                    className={clsx(
+                      "mb-5 text-4xl -lg:text-3xl -md:text-2xl -sm:mb-2"
+                    )}
+                  >
+                    {item.name}
+                  </h2>
+                  <p
+                    className={clsx(
+                      "mb-8 max-w-md text-xl -lg:text-lg -md:text-base -sm:mb-0"
+                    )}
+                  >
+                    {item.description}
+                  </p>
+                  <Link
+                    href={item.url}
+                    className={clsx(
+                      "rounded-full bg-orange-500 px-12 py-2.5 text-white -sm:hidden"
+                    )}
+                    target="_blank"
+                  >
+                    利用する
+                  </Link>
+                </div>
+                <div>
+                  <Link href={item.url} target="_blank">
+                    <Image
+                      src={item.image}
+                      width={item.width}
+                      height={item.height}
                       className={clsx(
-                        "mb-5 text-4xl -lg:text-3xl -md:text-2xl -sm:mb-2"
+                        "max-w-xl -lg:max-w-md -md:max-w-sm -sm:max-w-sm"
                       )}
-                    >
-                      {item.name}
-                    </h2>
-                    <p
-                      className={clsx(
-                        "mb-8 max-w-md text-xl -lg:text-lg -md:text-base -sm:mb-0"
-                      )}
-                    >
-                      {item.description}
-                    </p>
+                      alt={item.name}
+                    />
+                  </Link>
+                  <div className={clsx("pt-8 text-center")}>
                     <Link
                       href={item.url}
                       className={clsx(
-                        "rounded-full bg-orange-500 px-12 py-2.5 text-white -sm:hidden"
+                        "hidden rounded-full bg-orange-500 px-12 py-2.5 text-white -sm:inline-block"
                       )}
                       target="_blank"
                     >
                       利用する
                     </Link>
                   </div>
-                  <div>
-                    <Link href={item.url} target="_blank">
-                      <Image
-                        src={item.image}
-                        width={item.width}
-                        height={item.height}
-                        className={clsx(
-                          "max-w-xl -lg:max-w-md -md:max-w-sm -sm:max-w-sm"
-                        )}
-                        alt={item.name}
-                      />
-                    </Link>
-                    <div className={clsx("pt-8 text-center")}>
-                      <Link
-                        href={item.url}
-                        className={clsx(
-                          "hidden rounded-full bg-orange-500 px-12 py-2.5 text-white -sm:inline-block"
-                        )}
-                        target="_blank"
-                      >
-                        利用する
-                      </Link>
-                    </div>
-                  </div>
                 </div>
-              </section>
-            </>
+              </div>
+            </section>
           ))}
         </div>
       </main>
