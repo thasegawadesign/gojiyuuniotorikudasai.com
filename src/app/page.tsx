@@ -44,10 +44,21 @@ export default function Home() {
                   一問一答メーカー
                 </h2>
                 <p
-                  className={clsx("max-w-md text-xl -lg:text-lg -md:text-base")}
+                  className={clsx(
+                    "mb-8 max-w-md text-xl -lg:text-lg -md:text-base -sm:mb-0"
+                  )}
                 >
                   オリジナルの一問一答が作成できるアプリです。学習にお役立てください。
                 </p>
+                <Link
+                  href={"https://question-and-answer.gojiyuuniotorikudasai.com"}
+                  className={clsx(
+                    "rounded-full bg-orange-500 px-12 py-2.5 text-white -sm:hidden"
+                  )}
+                  target="_blank"
+                >
+                  利用する
+                </Link>
               </div>
               <div>
                 <Link
@@ -64,6 +75,19 @@ export default function Home() {
                     alt="一問一答メーカー"
                   />
                 </Link>
+                <div className={clsx("pt-8 text-center")}>
+                  <Link
+                    href={
+                      "https://question-and-answer.gojiyuuniotorikudasai.com"
+                    }
+                    className={clsx(
+                      "hidden rounded-full bg-orange-500 px-12 py-2.5 text-white -sm:inline-block"
+                    )}
+                    target="_blank"
+                  >
+                    利用する
+                  </Link>
+                </div>
               </div>
             </div>
           </section>
@@ -82,10 +106,21 @@ export default function Home() {
                   ステメモ
                 </h2>
                 <p
-                  className={clsx("max-w-md text-xl -lg:text-lg -md:text-base")}
+                  className={clsx(
+                    "mb-8 max-w-md text-xl -lg:text-lg -md:text-base -sm:mb-0"
+                  )}
                 >
                   簡易メモアプリです。ちょっとした用事やお買い物のメモにどうぞ。
                 </p>
+                <Link
+                  href={"https://question-and-answer.gojiyuuniotorikudasai.com"}
+                  className={clsx(
+                    "rounded-full bg-orange-500 px-12 py-2.5 text-white -sm:hidden"
+                  )}
+                  target="_blank"
+                >
+                  利用する
+                </Link>
               </div>
               <div>
                 <Link
@@ -102,6 +137,19 @@ export default function Home() {
                     alt="ステメモ"
                   />
                 </Link>
+                <div className={clsx("pt-8 text-center")}>
+                  <Link
+                    href={
+                      "https://question-and-answer.gojiyuuniotorikudasai.com"
+                    }
+                    className={clsx(
+                      "hidden rounded-full bg-orange-500 px-12 py-2.5 text-white -sm:inline-block"
+                    )}
+                    target="_blank"
+                  >
+                    利用する
+                  </Link>
+                </div>
               </div>
             </div>
           </section>
