@@ -36,7 +36,11 @@ export default function Home() {
               )}
             >
               <div>
-                <h2 className={clsx("mb-5 text-4xl -lg:text-3xl -md:text-2xl")}>
+                <h2
+                  className={clsx(
+                    "mb-5 text-4xl -lg:text-3xl -md:text-2xl -sm:mb-2"
+                  )}
+                >
                   一問一答メーカー
                 </h2>
                 <p
@@ -70,7 +74,11 @@ export default function Home() {
               )}
             >
               <div>
-                <h2 className={clsx("mb-5 text-4xl -lg:text-3xl -md:text-2xl")}>
+                <h2
+                  className={clsx(
+                    "mb-5 text-4xl -lg:text-3xl -md:text-2xl -sm:mb-2"
+                  )}
+                >
                   ステメモ
                 </h2>
                 <p
