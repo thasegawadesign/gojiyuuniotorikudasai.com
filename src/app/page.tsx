@@ -107,7 +107,7 @@ export default function Home() {
           </section>
         </div>
       </main>
-      <footer className={clsx("bg-gray-100 pb-7 -md:pb-6 -sm:pb-3")}>
+      <footer className={clsx("bg-gray-100 pb-5 -sm:pb-3")}>
         <p className={clsx("text-center text-sm tracking-wide")}>
           <small>© 2024 ご自由にお取りください.com</small>
         </p>
