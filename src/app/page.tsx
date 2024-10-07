@@ -84,7 +84,7 @@ export default function Home() {
                   <Link
                     href={item.url}
                     className={clsx(
-                      "rounded-full bg-orange-500 px-12 py-2.5 text-white -sm:hidden"
+                      "rounded-full border-2 border-transparent bg-orange-500 px-12 py-2.5 font-medium text-white transition-colors hover:border-orange-500 hover:bg-white hover:text-orange-500 -sm:hidden"
                     )}
                     target="_blank"
                   >
@@ -107,7 +107,7 @@ export default function Home() {
                     <Link
                       href={item.url}
                       className={clsx(
-                        "hidden rounded-full bg-orange-500 px-12 py-2.5 text-white -sm:inline-block"
+                        "hidden rounded-full border-2 border-transparent bg-orange-500 px-12 py-2.5 font-medium text-white transition-colors hover:border-orange-500 hover:bg-white hover:text-orange-500 -sm:inline-block"
                       )}
                       target="_blank"
                     >
