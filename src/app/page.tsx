@@ -103,11 +103,11 @@ export default function Home() {
                       alt={item.name}
                     />
                   </Link>
-                  <div className={clsx("pt-8 text-center")}>
+                  <div className={clsx("hidden pt-8 text-center -sm:block")}>
                     <Link
                       href={item.url}
                       className={clsx(
-                        "hidden rounded-full border-2 border-transparent bg-orange-500 px-12 py-2.5 font-medium text-white transition-colors hover:border-orange-500 hover:bg-white hover:text-orange-500 -sm:inline-block"
+                        "rounded-full border-2 border-transparent bg-orange-500 px-12 py-2.5 font-medium text-white transition-colors hover:border-orange-500 hover:bg-white hover:text-orange-500"
                       )}
                       target="_blank"
                     >
