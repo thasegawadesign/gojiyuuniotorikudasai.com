@@ -59,7 +59,7 @@ export default function Home() {
             "flex flex-col gap-24 bg-gray-100 px-5 pb-52 pt-32 -lg:pb-44 -lg:pt-28 -md:gap-16 -md:pb-40 -md:pt-24 -sm:gap-24 -sm:pb-28 -sm:pt-16"
           )}
         >
-          {items.map((item) => (
+          {items.map((item, i) => (
             <section key={item.name}>
               <div
                 className={clsx(
@@ -101,6 +101,7 @@ export default function Home() {
                         "max-w-xl -lg:max-w-md -md:max-w-sm -sm:max-w-sm"
                       )}
                       alt={item.name}
+                      priority={i === 0 ? true : false}
                     />
                   </Link>
                   <div className={clsx("hidden pt-8 text-center -sm:block")}>
