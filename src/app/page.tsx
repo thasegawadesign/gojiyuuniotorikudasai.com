@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
+import UseButton from "./components/useButton";
 
 type Item = {
   name: string;
@@ -81,15 +82,7 @@ export default function Home() {
                   >
                     {item.description}
                   </p>
-                  <Link
-                    href={item.url}
-                    className={clsx(
-                      "rounded-full border-2 border-transparent bg-orange-500 px-12 py-2.5 font-medium text-white transition-colors hover:border-orange-500 hover:bg-white hover:text-orange-500 -sm:hidden"
-                    )}
-                    target="_blank"
-                  >
-                    利用する
-                  </Link>
+                  <UseButton url={item.url} />
                 </div>
                 <div>
                   <Link href={item.url} target="_blank">
@@ -105,15 +98,7 @@ export default function Home() {
                     />
                   </Link>
                   <div className={clsx("hidden pt-8 text-center -sm:block")}>
-                    <Link
-                      href={item.url}
-                      className={clsx(
-                        "rounded-full border-2 border-transparent bg-orange-500 px-12 py-2.5 font-medium text-white transition-colors hover:border-orange-500 hover:bg-white hover:text-orange-500"
-                      )}
-                      target="_blank"
-                    >
-                      利用する
-                    </Link>
+                    <UseButton url={item.url} />
                   </div>
                 </div>
               </div>
