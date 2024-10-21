@@ -1,7 +1,7 @@
+import UseButton from "@/app/components/useButton";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
-import UseButton from "./components/useButton";
 
 type Item = {
   name: string;
