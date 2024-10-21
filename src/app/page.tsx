@@ -15,7 +15,7 @@ const items: Item[] = [
   {
     name: "一問一答メーカー",
     description:
-      "オリジナルの一問一答が作成できるアプリです。学習にお役立てください。",
+      "暗記に便利なオリジナル一問一答メーカー。学習にお役立てください。",
     image: "/question-and-answer.png",
     width: 1200,
     height: 482,
@@ -24,7 +24,7 @@ const items: Item[] = [
   {
     name: "ステメモ",
     description:
-      "簡易メモアプリです。ちょっとした用事やお買い物のメモにどうぞ。",
+      "直感的に操作可能なメモアプリ。ちょっとした用事やお買い物のメモに便利です。",
     image: "/sutememo.png",
     width: 1200,
     height: 482,
