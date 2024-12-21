@@ -82,7 +82,9 @@ export default function Home() {
                   >
                     {item.description}
                   </p>
-                  <UseButton url={item.url} />
+                  <div className={clsx("block -sm:hidden")}>
+                    <UseButton url={item.url} />
+                  </div>
                 </div>
                 <div>
                   <Link href={item.url} target="_blank">
