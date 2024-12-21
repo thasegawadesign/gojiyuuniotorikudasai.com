@@ -64,7 +64,7 @@ export default function Home() {
             <section key={item.name}>
               <div
                 className={clsx(
-                  "flex flex-row-reverse items-center justify-center gap-5 -sm:flex-col -sm:gap-4"
+                  "flex flex-row-reverse items-center justify-center gap-16 -md:gap-5 -sm:flex-col -sm:gap-4"
                 )}
               >
                 <div>
@@ -82,7 +82,9 @@ export default function Home() {
                   >
                     {item.description}
                   </p>
-                  <UseButton url={item.url} />
+                  <div className={clsx("block -sm:hidden")}>
+                    <UseButton url={item.url} />
+                  </div>
                 </div>
                 <div>
                   <Link href={item.url} target="_blank">
