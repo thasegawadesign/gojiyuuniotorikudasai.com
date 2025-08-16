@@ -20,7 +20,7 @@ const items: Item[] = [
     image: "/question-and-answer.png",
     width: 1200,
     height: 482,
-    url: "https://question-and-answer.gojiyuuniotorikudasai.com",
+    url: "https://www.question-and-answer.gojiyuuniotorikudasai.com",
   },
   {
     name: "ステメモ",
@@ -29,7 +29,7 @@ const items: Item[] = [
     image: "/sutememo.png",
     width: 1200,
     height: 482,
-    url: "https://sutememo.gojiyuuniotorikudasai.com",
+    url: "https://www.sutememo.gojiyuuniotorikudasai.com",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function Home() {
                 <div>
                   <h2
                     className={clsx(
-                      "mb-5 text-4xl -lg:text-3xl -md:text-2xl -sm:mb-2"
+                      "mb-5 text-4xl font-bold -lg:text-3xl -md:text-2xl -sm:mb-2"
                     )}
                   >
                     {item.name}
